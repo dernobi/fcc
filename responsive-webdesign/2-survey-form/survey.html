@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="UTF-8">
+    <title>Workout Template Generator</title>
+  </head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <h1 id="title">COVID-19 Workout Template Generator</h1>
+    <p id="description">Generates a template with exercises during the COVID-19 crisis</p>
+    <main>
+      <form id="survey-form">
+	<div class="labels">
+	  <label id="name-label">Name:</label>
+	</div>
+	<div class="input">
+	  <input type="text" id="name" placeholder="Whatever name we shall call you" required>
+	</div>
+	<div class="labels">
+	  <label id="email-label">Email:</label>
+	</div>
+	<div class="input">
+	  <input type="email" id="email" placeholder="some@thing.com" required>
+	</div>
+	<div class="labels">
+	  <label id="number-label">Fitness level:</label>
+	</div>
+	<div class="input">
+	  <input type="number" id="number" min="1" max="10" placeholder="10" required>
+	</div>
+	<div class="labels">
+	  <label id="dropdown-label">Goal:</label>
+	</div>
+	<div class="input">
+	  <select name="dropdown" id="dropdown">
+	      <option value="Test1" selected>Weight loss</option>
+	      <option value="Test2">Power</option>
+	      <option value="Test3">Endurance</option>
+	      <option value="Test4">Flexibility</option>
+	  </select>
+	</div>
+	<div class="labels">
+	  <label id="radio-label">Prefered cardio exercise:</label>
+	</div>
+	<div class="input">
+	  <input class="check" type="radio" name="radio" id="radio1" value="radio1">Running<br>
+	  <input class="check" type="radio" name="radio" id="radio2" value="radio2">Biking<br>
+	</div>
+	<div class="labels">
+	  <label id="checkbox">Available accessories:</label>
+	</div>
+	<div class="input">
+	  <input class="check" type="checkbox" id="check1" value="check1">Dumbbells<br>
+	  <input class="check" type="checkbox" id="check2" value="check2">Barbell<br>
+	  <input class="check" type="checkbox" id="check3" value="check3">Resistance bands<br>
+	  <input class="check" type="checkbox" id="check4" value="check4">Pullup bar<br>
+	  <input class="check" type="checkbox" id="check5" value="check5">Squat rack
+	</div>
+	<div class="labels">
+	  <label id="textarea">Anything you want to add:</label>
+	</div>
+	<div class="input">
+	  <textarea rows="4" cols="30" placeholder="Pre existing conditions, feedback or anything else you want to add"></textarea>
+	</div>
+	<button id="submit" form="survey-form" type="submit">Submit</button>
+      </form>
+    </main>
+ </body>
+</html>
